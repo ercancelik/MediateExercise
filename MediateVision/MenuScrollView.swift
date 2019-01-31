@@ -14,27 +14,25 @@ class MenuScrollView : UIScrollView {
     init(buttonMetaData: ButtonMetaData?){
         super.init(frame: CGRect())
         
-        let spaceButtonCount = (buttonMetaData?.visibleButtonCount)! / 2
+        self.backgroundColor = .white
+        
         let screenSize = UIScreen.main.bounds
         
-        let buttonWidth : CGFloat = screenSize.width / CGFloat((buttonMetaData?.visibleButtonCount)! + spaceButtonCount)
-        let buttonHeight : CGFloat = buttonWidth
+        self.contentSize.height = screenSize.height / 6
+        
+        let buttonWidth = screenSize.width / CGFloat((buttonMetaData?.visibleButtonCount)!)
+        let buttonHeight = self.contentSize.height
         let buttonSize = CGSize(width:buttonWidth, height:buttonHeight)
-        let space = (CGFloat(spaceButtonCount) * buttonWidth) / CGFloat((buttonMetaData?.visibleButtonCount)!)
         
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.contentSize.height = buttonHeight
-        self.contentSize.width = buttonWidth * CGFloat((buttonMetaData?.buttonAssets)!.count) + space * CGFloat((buttonMetaData?.buttonAssets)!.count)
-        
-        self.backgroundColor = UIColor.yellow
-        
+        self.contentSize.width = buttonWidth * CGFloat((buttonMetaData?.buttonAssets)!.count)
+                
         for (index, item) in (buttonMetaData?.buttonAssets)!.enumerated() {
             
-            let button = MenuButton(frame: CGRect(origin: CGPoint(x: space / 2 + CGFloat(index) * buttonWidth + CGFloat(index) * space, y: 0),
+            let button = MenuButton(frame: CGRect(origin: CGPoint(x: CGFloat(index) * buttonWidth, y: 0),
                                                   size: buttonSize),
                                     title: item.text!,
-                                    icon: item.image!,
-                                    imageFitStrategy: (buttonMetaData?.imageFitStrategy)!)
+                                    icon: item.image!)
             
             self.addSubview(button)
         }

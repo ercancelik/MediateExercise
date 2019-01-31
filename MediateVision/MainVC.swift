@@ -15,8 +15,7 @@ class MainVC: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let buttonMetaData = ButtonMetaData(imageFitStrategy: .ratio,
-                                            buttonAssets: [
+        let buttonMetaData = ButtonMetaData(buttonAssets: [
                                                 ButtonAsset(image: UIImage(named: "voice"), text: "voice"),
                                                 ButtonAsset(image: UIImage(named: "person"), text: "person"),
                                                 ButtonAsset(image: UIImage(named: "seat"), text: "seat"),
