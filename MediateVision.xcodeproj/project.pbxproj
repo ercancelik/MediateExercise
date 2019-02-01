@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		396428722204D82700FB93CF /* ipad.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 396428702204D82700FB93CF /* ipad.PNG */; };
+		396428732204D82700FB93CF /* iphone.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 396428712204D82700FB93CF /* iphone.PNG */; };
 		39707F8021FFA9A8006BC1CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39707F7F21FFA9A8006BC1CF /* AppDelegate.swift */; };
 		39707F8221FFA9A8006BC1CF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39707F8121FFA9A8006BC1CF /* MainVC.swift */; };
 		39707F8521FFA9A8006BC1CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39707F8321FFA9A8006BC1CF /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		396428702204D82700FB93CF /* ipad.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipad.PNG; sourceTree = "<group>"; };
+		396428712204D82700FB93CF /* iphone.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone.PNG; sourceTree = "<group>"; };
 		39707F7C21FFA9A8006BC1CF /* MediateVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediateVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39707F7F21FFA9A8006BC1CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39707F8121FFA9A8006BC1CF /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -41,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3964286F2204D7E100FB93CF /* output */ = {
+			isa = PBXGroup;
+			children = (
+				396428702204D82700FB93CF /* ipad.PNG */,
+				396428712204D82700FB93CF /* iphone.PNG */,
+			);
+			path = output;
+			sourceTree = "<group>";
+		};
 		39707F7321FFA9A8006BC1CF = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +73,7 @@
 		39707F7E21FFA9A8006BC1CF /* MediateVision */ = {
 			isa = PBXGroup;
 			children = (
+				3964286F2204D7E100FB93CF /* output */,
 				39707F7F21FFA9A8006BC1CF /* AppDelegate.swift */,
 				39707F8921FFA9A9006BC1CF /* Assets.xcassets */,
 				39707F8E21FFA9A9006BC1CF /* Info.plist */,
@@ -132,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				39707F8D21FFA9A9006BC1CF /* LaunchScreen.storyboard in Resources */,
+				396428722204D82700FB93CF /* ipad.PNG in Resources */,
+				396428732204D82700FB93CF /* iphone.PNG in Resources */,
 				39707F8A21FFA9A9006BC1CF /* Assets.xcassets in Resources */,
 				39707F8521FFA9A8006BC1CF /* Main.storyboard in Resources */,
 			);
