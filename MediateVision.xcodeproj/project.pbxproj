@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		396428722204D82700FB93CF /* ipad.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 396428702204D82700FB93CF /* ipad.PNG */; };
-		396428732204D82700FB93CF /* iphone.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 396428712204D82700FB93CF /* iphone.PNG */; };
 		39707F8021FFA9A8006BC1CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39707F7F21FFA9A8006BC1CF /* AppDelegate.swift */; };
 		39707F8221FFA9A8006BC1CF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39707F8121FFA9A8006BC1CF /* MainVC.swift */; };
 		39707F8521FFA9A8006BC1CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39707F8321FFA9A8006BC1CF /* Main.storyboard */; };
@@ -146,8 +144,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				39707F8D21FFA9A9006BC1CF /* LaunchScreen.storyboard in Resources */,
-				396428722204D82700FB93CF /* ipad.PNG in Resources */,
-				396428732204D82700FB93CF /* iphone.PNG in Resources */,
 				39707F8A21FFA9A9006BC1CF /* Assets.xcassets in Resources */,
 				39707F8521FFA9A8006BC1CF /* Main.storyboard in Resources */,
 			);
