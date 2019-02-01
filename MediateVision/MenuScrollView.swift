@@ -11,14 +11,14 @@ import UIKit
 
 class MenuScrollView : UIScrollView {
     
-    init(buttonMetaData: ButtonMetaData?){
+    init(buttonMetaData: ButtonMetaData?, height: CGFloat){
         super.init(frame: CGRect())
         
         self.backgroundColor = .white
         
         let screenSize = UIScreen.main.bounds
         
-        self.contentSize.height = screenSize.height / 6
+        self.contentSize.height = height
         
         let buttonWidth = screenSize.width / CGFloat((buttonMetaData?.visibleButtonCount)!)
         let buttonHeight = self.contentSize.height

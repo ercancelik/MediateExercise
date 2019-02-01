@@ -17,9 +17,25 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wBV-bp-8u0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="332"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wBV-bp-8u0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Aqc-8e-0Lp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wBV-bp-8u0" secondAttribute="bottom" constant="335" id="DcY-Ms-lyp"/>
+                            <constraint firstItem="wBV-bp-8u0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mTN-WN-7l8"/>
+                            <constraint firstItem="wBV-bp-8u0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wCH-Jm-bG7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomConstaint" destination="DcY-Ms-lyp" id="aE7-OQ-6Dq"/>
+                        <outlet property="cameraPreview" destination="wBV-bp-8u0" id="V5D-qX-r81"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
